@@ -22,5 +22,10 @@ btn1.pull=digitalio.Pull.DOWN
 while True:
     if btn1.value:
         print("button 1 : pressed")
-        keyboard.press(Keycode.ALT, Keycode.TAB)
+        keyboard.press(Keycode.A)
+        time.sleep(0.1)
+        keyboard.release(Keycode.A)
+
     time.sleep(0.1)
+
+
